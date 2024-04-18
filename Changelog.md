@@ -6,7 +6,10 @@ Based on CIS 2.0.0
 - many changes
   - new checks
   - reordering of content
-  - httpd server  variable is now web_server
+  - httpd server variable is now web_server
+  - fixed duplicates
+  - updated few checks
+  - script improvements
 
 Based on CIS 1.0.1
 
