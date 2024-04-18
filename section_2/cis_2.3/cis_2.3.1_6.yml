@@ -7,7 +7,7 @@ package:
     meta:
       server: 1
       workstation: 1
-      CIS_ID: 
+      CIS_ID:
       - 2.3.1
       CISv8:
       - 4.8
@@ -18,13 +18,13 @@ package:
   {{ end }}
   {{ if not .Vars.rhel8cis_rsh_required }}
     {{ if .Vars.rhel8cis_rule_2_3_2 }}
-  telnet:
+  rsh:
     title: 2.3.2 | Ensure rsh client is not installed
     installed: false
     meta:
       server: 1
       workstation: 1
-      CIS_ID: 
+      CIS_ID:
       - 2.3.2
       CISv8:
       - 4.8
@@ -52,7 +52,7 @@ package:
   {{ end }}
   {{ if not .Vars.rhel8cis_telnet_required }}
     {{ if .Vars.rhel8cis_rule_2_3_4 }}
-  talk:
+  telnet:
     title: 2.3.4 | Ensure telnet client is not installed
     installed: false
     meta:
@@ -75,7 +75,7 @@ package:
     meta:
       server: 1
       workstation: NA
-      CIS_ID: 
+      CIS_ID:
       - 2.3.5
       CISv8:
       - 4.8
@@ -92,7 +92,7 @@ package:
     meta:
       server: 1
       workstation: NA
-      CIS_ID: 
+      CIS_ID:
       - 2.3.6
       CISv8:
       - 4.8
