@@ -6,7 +6,7 @@ file:
     path: /etc/pam.d/password-auth
     exists: true
     contents:
-    - '/^password\s+(requisite|required)\s+\pam_pwhistory.so use_authtok/'
+    - '/^password\s+(requisite|required)\s+pam_pwhistory.so use_authtok/'
     meta:
       server: 1
       workstation: 1
@@ -22,7 +22,7 @@ file:
     path: /etc/pam.d/system-auth
     exists: true
     contents:
-    - '/^password\s+(requisite|required)\s+\pam_pwhistory.so use_authtok/'
+    - '/^password\s+(requisite|required)\s+pam_pwhistory.so use_authtok/'
     meta:
       server: 1
       workstation: 1
