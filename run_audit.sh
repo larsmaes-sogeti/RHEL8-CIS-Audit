@@ -204,7 +204,7 @@ $AUDIT_BIN -g "$audit_content_dir/$AUDIT_FILE" --vars "$varfile_path"  --vars-in
 
 # create screen output
 # create screen output
-if [ "$(grep -c Error: "$audit_out")" == 0 ]  || [ "$format" = junit ] || [ "$format" = tap ]; then
+if [ "$(grep -c test-count "$audit_out")" -ge 1 ]  || [ "$format" = junit ] || [ "$format" = tap ]; then
   eval $output_summary
   echo "Completed file can be found at $audit_out"
   echo "###############"
